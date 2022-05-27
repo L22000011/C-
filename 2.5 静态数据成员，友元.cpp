@@ -21,6 +21,8 @@ int Vist::count = 0;
 3.不能访问非静态成员
 */
 
+静态成员函数在类外初始化，在类内定义。
+
 //eg
 #include<iostream>
 class objcount {
