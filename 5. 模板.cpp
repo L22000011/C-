@@ -13,8 +13,18 @@ template<类型形式参数表>
 { 函数体 }
 
 template<class T>
-T max(T &a, T &b)
+T max(T a, T b)
 { return (a>=b)?a:b; }
+
+
+交换的模板
+template<class T>
+ void swap(T &a, T &b)
+{
+  T temp = a;
+ a = b;
+ b = temp;
+}
 
 
 类模板
