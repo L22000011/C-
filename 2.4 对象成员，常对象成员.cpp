@@ -35,8 +35,8 @@ class SS
 {
     public:
     SS(int i)    //初始化表
-    : ten(10), refi(i);
-    {}
+    : ten(10), refi(i)
+    { }
     protected:
     const int ten;
     int &refi;
