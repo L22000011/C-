@@ -267,3 +267,22 @@ num = x.num; }}
 移动语义指的就是将其他对象（通常是临时对象）拥有的内存资源“移为已用”。
 
 */
+
+
+拷贝复制之前需要进行自我判断
+inline
+String& Strint::operator = (const String& str)
+{
+	if(this == &str)
+		return *this;
+	delete [] m_data;
+	m_data = new char[strlrn(str.m_data) + 1];
+	strcpy(m_data, str.m_data);
+	return *this;
+}
+
+
+
+
+
+
